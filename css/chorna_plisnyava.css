@@ -1,0 +1,317 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@200;400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #000;
+  color: #f6f6f6;
+}
+body a {
+  color: white;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1160px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header {
+  max-width: 1243px;
+  padding: 93px 0 46px 0;
+  margin: 0 auto;
+}
+.header__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about__body {
+  display: flex;
+  justify-content: space-between;
+  grid-gap: 110px;
+}
+.about__text {
+  text-align: left;
+}
+.about__text h1, .about__text h2 {
+  font-size: 85px;
+  font-weight: 200;
+  color: #cccccc;
+}
+.about__text h1 {
+  margin-top: 50px;
+  letter-spacing: 68px;
+}
+.about__text h2 {
+  letter-spacing: 21px;
+  padding-bottom: 180px;
+}
+.about__text h3 {
+  font-size: 46px;
+  color: #999999;
+  padding-bottom: 30px;
+}
+.about__text p {
+  font-size: 16px;
+  text-align: start;
+  max-width: 550px;
+  color: #cccccc;
+}
+
+.flower {
+  text-align: center;
+  padding: 400px 0;
+}
+
+.verse1 {
+  font-size: 20px;
+  color: #cccccc;
+  padding-bottom: 400px;
+}
+.verse1__body {
+  display: flex;
+  justify-content: center;
+  grid-gap: 30px;
+}
+.verse1__verse1 {
+  text-align: right;
+}
+.verse1__verse2 {
+  text-align: left;
+}
+
+.verse2 {
+  padding-bottom: 400px;
+  text-align: justify;
+}
+.verse2__text {
+  max-width: 217px;
+  text-align: justify;
+  font-size: 21px;
+  color: #cccccc;
+  margin: 0 auto;
+}
+.verse2 span {
+  display: block;
+  margin-right: 10px;
+  text-align: justify;
+  font-size: 21px;
+  color: #cccccc;
+
+}
+
+.verse3 {
+  padding-bottom: 200px;
+}
+.verse3__body {
+  display: flex;
+  justify-content: center;
+  grid-gap: 50px;
+}
+.verse3__text {
+  font-size: 20px;
+  text-align: right;
+  color: #cccccc;
+}
+
+@media (max-width: 1200px) {
+  .about h1 {
+    letter-spacing: 46px;
+    font-size: 60px;
+    margin-top: 50px;
+  }
+  .about h2 {
+    font-size: 50px;
+    padding-bottom: 40px;
+  }
+  .about h3 {
+    font-size: 33px;
+    color: #999999;
+    padding-bottom: 30px;
+  }
+  .about p {
+    font-size: 18px;
+    text-align: start;
+    max-width: 550px;
+    color: #cccccc;
+  }
+
+}
+@media (max-width: 1000px) {
+  .about h1 {
+    letter-spacing: 46px;
+    font-size: 36px;
+    margin-top: 50px;
+  }
+  .about h2 {
+    font-size: 36px;
+    padding-bottom: 40px;
+  }
+  .about h3 {
+    font-size: 24px;
+    color: #999999;
+    padding-bottom: 30px;
+  }
+  .about p {
+    font-size: 18px;
+    text-align: left;
+    max-width: 550px;
+    color: #cccccc;
+  }
+
+  .verse1 {
+    font-size: 16px;
+  }
+
+  .verse3__body {
+    grid-gap: 20px;
+  }
+  .verse3__text {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 20px;
+  }
+  .about h1 {
+    letter-spacing: 45px;
+    font-size: 36px;
+    margin-top: 50px;
+  }
+  .about {
+    text-align: center;
+  }
+  .about__body {
+    display: block;
+  }
+  .about__text {
+    text-align: center;
+  }
+  .about h1 {
+    font-size: 38px;
+    padding-bottom: 10px;
+  }
+  .about h2 {
+    font-size: 38px;
+  }
+  .about p {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .flower {
+    padding: 200px 0;
+  }
+
+  .verse1 {
+    text-align: center;
+    padding-bottom: 200px;
+  }
+  .verse1__body {
+    display: block;
+  }
+  .verse1__verse1 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  .verse1__verse2 {
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .verse2 {
+    padding: 0 0 100px 0;
+  }
+
+  .verse3__body {
+    display: block;
+    text-align: center;
+  }
+  .verse3__text {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+}
+
+.head {
+  background: white;
+}

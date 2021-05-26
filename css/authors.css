@@ -1,0 +1,62 @@
+
+
+#authors {
+	background-color:#000;
+}
+
+#authors .container {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+.col {
+	width: 33.33%;
+	max-width: 200px;
+	margin: auto;
+}
+
+.col:not(.col2) .box:first-child {
+	margin-top: 100px;
+}
+
+.col2 img:nth-child(2) {
+	max-height: 280px;
+	max-width: none;
+	margin: auto;
+	margin-top: 25px;
+	width: auto;
+}
+
+#authors .box {
+	position: relative;
+}
+
+#authors .col:not(.col2) .box:nth-child(1) a:nth-child(1) {
+	position: absolute;
+	left: 50%;
+	top:0;
+	margin-top: -30px;
+	transform: translateX(-50%);
+	width: 100%;
+}
+
+#authors .box:nth-child(2) img:nth-child(2) {
+	margin-top: 25px;
+}
+
+	
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
